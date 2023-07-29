@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <title> Learn mongoDB</title>
+    <link rel="shortcut icon" href="/Images/mongo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+   <link rel="stylesheet" href="/css/s1.css">
+</head>
+<body >
+  <div class="row d-flex">
+    <div class=" col-4">
+      <div id="list-example" class="list-group " >
+        <a class="list-group-item list-group-item-action" href="#list-item-1">Introduction to MongoDB</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">Installing MongoDB</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">Working with MongoDB Database</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">Working with Collections</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-5">Understanding JSON & BSON</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-6">Insert Documents in Collection</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-7">Fetching Documents from a Collection</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-8">Updating Documents in a Collection</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-9">Update vs UpdateOne</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-10">Understanding save() method</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-11">Deleting documents from Collection</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-12">Understanding Cursor in MongoDB</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-13">Datatypes in MongoDB</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-14">Embedded Documents</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-15">Working with arrays</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-16">Relations in MongoDB</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-17">One to one relation using embedded document</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-18">One to one Relation using references</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-19">Querying Multiple documents using lookup</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-20">One to many relation using embedded document</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-21">One to many relation using references</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-22">Many to many relation using References</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-23">Importance of having schema</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-24">Schema Validation in MongoDB</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-25">Setting validation level & action</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-26">Understanding Ordered Insertion</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-27">Understanding writeConcern for Insertion</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-28">What is Journal in MongoDB</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-29">What is Atomicity</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-30">Setting Environment Variable for MongoDB</a>
+      </div>
+    </div>
+    <div class="col-8 bg-light " id="contenu" >
+      <!--breadcrumb-->
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example ml-3" tabindex="0">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">mongoDB</li>
+          </ol>
+        </nav>
+        <!--contenu-->
+        <h4 id="list-item-1">Introduction to MongoDB</h4>
+        <p>
+          This course breaks down the fundamentals of CSS into digestible, easy to understand pieces. Over the next few modules, you'll learn how the core aspects of CSS work and how to use them effectively in your projects. Use the menu pane by the "Learn CSS" logo to navigate the modules.
+
+        </p>
+        <p>
+          You'll learn CSS fundamentals like the box model, cascade and specificity, flexbox, grid and z-index. And, along with these fundamentals, you'll learn about functions, color types, gradients, logical properties and inheritance to make you a well-rounded front-end developer, ready to take on any user interface.
+
+        </p>
+        <p>Each module is full of interactive demos and self-assessments for you to test your knowledge. In addition to learning through reading and demos, there is an accompanying podcast episode for each topic as another way to learn and continue expanding your knowledge.</p>
+        <p>This course is created for beginner and advanced CSS developers alike. You can go through the series from start to finish to get a general understanding of CSS from top to bottom, or you can use it as a reference for specific styling subjects. For those new to web development overall, check out Learn HTML to learn all about how to write markup and link your stylesheets.</p>
+        <p>Here's what you'll learn:</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/l7Psw5frLwk?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#01 Introduction to MongoDB | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-2">nstalling MongoDB</h4>
+        <p>Everything displayed by CSS is a box. Understanding how the CSS Box Model works is therefore a core foundation of CSS.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/9Mqesly6iFs?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#02 Installing MongoDB on Windows | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-3">Working with MongoDB Database</h4>
+        <p>To apply CSS to an element you need to select it. CSS provides you with a number of different ways to do this, and you can explore them in this module.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/1ZqupMWNWJY?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#03 Working with MongoDB Database | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-4">Working with Collections</h4>
+        <p>Sometimes two or more competing CSS rules could apply to an element. In this module find out how the browser chooses which to use, and how to control this selection.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/zUpXlGDJyf0?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#04 Working with Collections | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-5">Understanding JSON & BSON</h4>
+        <p>This module takes a deeper look at specificity, a key part of the cascade.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/4qWZ0WOWWBw?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#05 Understanding JSON &amp; BSON  | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-6">Insert Documents in Collection</h4>
+        <p>Some CSS properties inherit if you don't specify a value for them. Find out how this works, and how to use it to your advantage in this module.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/3iiH-EGhhjI?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#06 Insert Documents in Collection | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-7">Fetching Documents from a Collection</h4>
+        <p>There are several different ways to specify color in CSS. In this module we take a look at the most commonly used color values.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/oCGwraDsxh0?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#07 Fetching Documents from a Collection | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-8">Updating Documents in a Collection</h4>
+        <p>In this module find out how to size elements using CSS, working with the flexible medium of the web.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/e54dNeWk8Co?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#08 Updating Documents in a Collection | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-9">Update vs UpdateOne</h4>
+        <p>An overview of the various layout methods you have to choose from when building a component or page layout.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/qUo0j25W72M?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#09 Update vs UpdateOne | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-10">Understanding save() method</h4>
+        <p>Flexbox is a layout mechanism designed for laying out groups of items in one dimension. Learn how to use it in this module.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/IbGE_oazQj0?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#10 Understanding save() method | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-11">Deleting documents from Collection</h4>
+        <p>CSS Grid Layout provides a two dimensional layout system, controlling layout in rows and columns. In this module discover everything grid has to offer.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/6EJIaGR0aT8?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#11 Deleting documents from Collection | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4  id="list-item-12">Understanding Cursor in MongoDB</h4>
+        <p>Logical, flow relative properties and values are linked to the flow of text, rather than the physical shape of the screen. Learn how to take advantage of this newer approach to CSS.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/j5TsXjPOEHw?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#12 Understanding Cursor in MongoDB | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-13">Datatypes in MongoDB</h4>
+        <p>Find out how to select the best method of spacing elements, taking into consideration the layout method you are using and component that you need to build.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/CHaTfLHuYrM?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#13  Datatypes in MongoDB | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-14">Embedded Documents</h4>
+        <p>A pseudo-element is like adding or targeting an extra element without having to add more HTML. They have a variety of roles and you can learn about them in this module.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/EFWMv_vRz54?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#14 Embedded Documents | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-15">Working with arrays</h4>
+        <p>Pseudo-classes let you apply CSS based on state changes. This means that your design can react to user input such as an invalid email address.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/XazVnCv56Lk?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#15 Working with arrays | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-16">Relations in MongoDB</h4>
+        <p>A border provides a frame for your boxes. In this module find out how to change the size, style and color of borders using CSS.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/DHDxlwZdwys?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#16 Relations in MongoDB | Fundamentals of MongoDB | Complete MongoDB Course 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-17">One to one relation using embedded document</h4>
+        <p>There are a number of ways to add shadows to text and elements in CSS. In this module you'll learn how to use each option, and the tasks they were designed for.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/9w6J_qeN5XM?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#17 One to one relation using embedded document | Fundamentals of MongoDB | Complete MongoDB Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-18">One to one Relation using references</h4>
+        <p>Understand the importance of focus in your web applications. You'll find out how to manage focus, and how to make sure the path through your page works for people using a mouse, and those using the keyboard to navigate.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/0Qnruzxadco?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#18 One to one Relation using references | Relations in MongoDB | Complete MongoDB Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-19">Querying Multiple documents using lookup</h4>
+        <p>In this module find out how to control the order in which things layer on top of each other, by using z-index and the stacking context.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/3mLq-bGd-Lc?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#19 Querying Multiple documents using lookup | Relations in MongoDB | Complete MongoDB Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-20">One to many relation using embedded document</h4>
+        <p>CSS has a range of inbuilt functions. In this module you will find out about some of the key functions, and how to use them.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/KT4otVXq8aU?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#20 One to many relation using embedded document | Relations in MongoDB | A Complete MongoDB Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-21">One to many relation using references</h4>
+        <p>In this module you will find out how to use the various types of gradients available in CSS. Gradients can be used to create a whole host of useful effects, without needing to create an image using a graphics application.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/FODzjpKv7yI?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#21 One to many relation using references | Relations in MongoDB | A Complete MongoDB Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-22">Many to many relation using References</h4>
+        <p>Animation is a great way to highlight interactive elements, and add interest and fun to your designs. In this module find out how to add and control animation effects with CSS.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/qVYAuJGm3Ow?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#22 Many to many relation using References | Relations in MongoDB | A Complete MongoDB Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-23">Importance of having schema</h4>
+        <p>Filters in CSS mean that you can apply effects you might only think possible in a graphics application. In this module, you can discover what is available.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/xOWlUIq2jqQ?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#23 Importance of having schema | Schema &amp; Schema Validation | A Complete MongoDB Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-24">Schema Validation in MongoDB</h4>
+        <p>Create compositional effects by mixing two or more layers, and learn how to isolate an image with a white background in this module on blend modes.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/t-Z3xIcrMqg?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#24 Schema Validation in MongoDB | Schema &amp; Schema Validation | A Complete MongoDB Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-25">Setting validation level & action</h4>
+        <p>A list, structurally, is composed of a list container element filled with list items. In this module, you'll learn how to style all the parts of a list.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/q0JOEgA66-k?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#25 Setting validation level &amp; action | Schema &amp; Schema Validation | A Complete MongoDB Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-26">Understanding Ordered Insertion</h4>
+        <p>In this module, learn how to define transitions between states of an element. Use transitions to improve user experience by providing visual feedback to user interaction.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/v3rKeOpqKV4?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#26 Understanding Ordered Insertion | CRUD Operation in Detail | A Complete MongoDB Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-27">Understanding writeConcern for Insertion</h4>
+        <p>Overflow is how you deal with content that doesn’t fit in a set parent size. In this module, you’ll think outside the box, and learn how to style overflowing content.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/uaV05FSOY14?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#27 Understanding writeConcern for Insertion | CRUD Operation in Detail | A Complete MongoDB Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-28">What is Journal in MongoDB</h4>
+        <p>In this module learn the ways you can style backgrounds of boxes using CSS.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/OOuC6ygfRvM?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#28 What is Journal in MongoDB | CRUD Operation in Detail | A Complete MongoDB Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-29">What is Atomicity</h4>
+        <p>In this module, learn how to style text on the web.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/OOwiPxIyZIQ?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#29 What is Atomicity | CRUD Operation in Detail | A Complete MongoDB Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4 id="list-item-30">Setting Environment Variable for MongoDB</h4>
+        <p>Further resources to help you take your next steps.</p>
+        <iframe class="col-12" width="853" height="480" src="https://www.youtube.com/embed/iUYGWcRaneM?list=PL1BztTYDF-QM6KSVfrbSyJNTU9inyBqYF" title="#30 Setting Environment Variable for MongoDB  | CRUD Operation in Detail | A Complete MongoDB Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+      <script src="/js/popper.min.js"></script>
+      <script src="/js/jquery-3.6.4.min.js"></script>
+      <script src="/js/bootstrap.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+    </body>
+</html>
+ <!--side-navabar-->
+ <!--
+ <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; min-height: 100vh;">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    <span class="fs-4 mb-3">Learn CSS3 !</span>
+  </a>
+  <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+      <a href="#p1" class="nav-link active" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Learn CSS
+      </a>
+    </li>
+    <li>
+      <a href="#p2" class="nav-link text-white">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+        Box Model
+      </a>
+    </li>
+    <li>
+      <a href="#p3" class="nav-link text-white">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+        Selectors
+      </a>
+    </li>
+    <li>
+      <a href="#p4" class="nav-link text-white">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+        The cascade
+      </a>
+    </li>
+    <li>
+      <a href="#p5" class="nav-link text-white">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+        specificity
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p6" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Inheritance
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p7" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Color
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p8" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Sizing Units
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p9" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Layout
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p10" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Flexbox
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p11" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Grid
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p12" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Logical Properties
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p13" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Spacing
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p14" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Pseudo-elements
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p15" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Pseudo-classes
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p16" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Borders
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p17" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Shadows
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p18" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Focus
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p19" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        z-index
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p20" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Functions
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p21" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Gradients
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p22" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Animations
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p23" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Filters
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p24" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Blend Modes
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p25" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Lists
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p26" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Transitions
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p27" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Overflow
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p28" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Backgrounds
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p29" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Text and typography
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#p30" class="nav-link text-white" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Conclusion and next
+      </a>
+    </li>
+  </ul>
+  <hr>
+  <div class="dropdown">
+    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+      <strong>mdo</strong>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+      <li><a class="dropdown-item" href="#">New project...</a></li>
+      <li><a class="dropdown-item" href="#">Settings</a></li>
+      <li><a class="dropdown-item" href="#">Profile</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Sign out</a></li>
+    </ul>
+  </div>
+</div>
+
+<div>
+
+  <div class="sous-partie1">
+
+  </div>
+
+  <div class="sous-partie2">
+    <div id="p1">
+      <h1>Le</h1>
+    </div>
+    <div id="p2"></div>
+    <div id="p3"></div>
+    <div id="p4"></div>
+    <div id="p5"></div>
+    <div id="p6"></div>
+    <div id="p7"></div>
+    <div id="p8"></div>
+    <div id="p9"></div>
+    <div id="p10"></div>
+    <div id="p11"></div>
+    <div id="p12"></div>
+    <div id="p13"></div>
+    <div id="p14"></div>
+    <div id="p15"></div>
+    <div id="p16"></div>
+    <div id="p17"></div>
+    <div id="p18"></div>
+    <div id="p19"></div>
+    <div id="p20"></div>
+    <div id="p21"></div>
+    <div id="p22"></div>
+    <div id="p23"></div>
+    <div id="p24"></div>
+    <div id="p25"></div>
+    <div id="p26"></div>
+    <div id="p27"></div>
+    <div id="p28"></div>
+    <div id="p29"></div>
+    <div id="p30"></div>
+  </div>
+</div>
+-->
